@@ -59,7 +59,7 @@ app.UseMiddleware<CustomeMiddleware>();  //Custom Middleware
 app.Run(async (context) =>
 {
     Console.WriteLine(" End of the Pipeline ");
-    await context.Response.WriteAsync("\n Hello Welcome To Bacancy!!!!!!!! ");
+    await context.Response.WriteAsync("<br> Hello Welcome To Bacancy!!!!!!!! </body></html>");
 });
 
 app.Run();

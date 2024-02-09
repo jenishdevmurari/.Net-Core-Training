@@ -4,8 +4,8 @@
     {
         public async Task InvokeAsync(HttpContext context,RequestDelegate next)
         {
-            Console.WriteLine("Custom Middleware");
-            await context.Response.WriteAsync("Custom Middleware");
+            Console.WriteLine("<html><body>Custom Middleware");
+            await context.Response.WriteAsync("Custome Middleware");
             await next(context);
         }
     }
